@@ -182,19 +182,6 @@
 	  }
 	});
 
-	/* ----------------------------------------------------------- */
-	/*  8. CLIENT TESTIMONIALS (SLICK SLIDER)
-	/* ----------------------------------------------------------- */
-
-		$('.mu-testimonial-slide').slick({
-		  arrows: false,
-		  dots: true,
-		  infinite: true,
-		  speed: 500,
-		  autoplay: true,
-		  cssEase: 'linear'
-		});
-
 
 	/* ----------------------------------------------------------- */
 	/*  9. BUTTON SMOOTH SCROLL ( VIEW MY WORK )
