@@ -1,10 +1,5 @@
 
 
-/*=======================================
-Template Design By MarkUps  
-Author URI : http://www.markups.io/
-========================================*/
-
 .mu-primary-btn:hover,
 .mu-primary-btn:focus,
 .mu-filter-link:hover,
@@ -26,9 +21,6 @@ Author URI : http://www.markups.io/
 	color: #c762cb;
 }
 
-.mu-testimonial-slide .slick-dots li button:hover,
-.mu-testimonial-slide .slick-dots li button:focus,
-.mu-testimonial-slide .slick-dots li.slick-active button,
 .mu-resume-btn:hover,
 .mu-resume-btn:focus,
 .mu-header-dot,

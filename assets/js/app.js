@@ -1,52 +1,29 @@
-$(function() {
+document.getElementById("ajax-contact").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-	// Get the form.
-	var form = $('#ajax-contact');
+    // Collect form data
+    var formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
 
-	// Get the messages div.
-	var formMessages = $('#form-messages');
+    // Send the form data to EmailJS
+    emailjs.send("service_mfi89a7", "template_017zi8n", formData)
+        .then(function(response) {
+            // Handle success
+            document.getElementById("form-messages").textContent = "Message sent successfully!";
+            document.getElementById("form-messages").classList.remove("error");
+            document.getElementById("form-messages").classList.add("success");
 
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
-
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#subject').val('');
-			$('#message').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
-
-	});
-
+            // Clear the form fields
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        }, function(error) {
+            // Handle error
+            document.getElementById("form-messages").textContent = "Oops! Something went wrong.";
+            document.getElementById("form-messages").classList.remove("success");
+            document.getElementById("form-messages").classList.add("error");
+        });
 });

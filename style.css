@@ -124,7 +124,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	
 }
 
 address {
@@ -769,129 +769,6 @@ button:focus {
 
 
 /*--------------------*/
-/* CLIENT TESTIMONIALS */
-/*--------------------*/
-
-#mu-testimonials {
-	background-image: url("assets/images/testimonials-bg.jpeg");
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-	display: inline;
-	float: left;
-	position: relative;
-	width: 100%;
-}
-
-#mu-testimonials::before {
-	background: rgba(0,0,0,0.9);
-	bottom: 0;
-	content: '';
-	left: 0;
-	top: 0;
-	right: 0;
-	position: absolute;
-	opacity: 0.84;
-}
-
-.mu-testimonials-area {
-	display: inline;
-	float: left;
-	padding: 150px 0 210px;
-	width: 100%;
-}
-
-.mu-testimonial-header {
-	display: inline;
-	float: left;
-	text-align: center;
-	width: 100%;
-}
-
-.mu-testimonials-area h2 {
-	color: #fff;
-	text-align: center;
-}
-
-.mu-testimonials-block {
-	display: inline;
-	float: left;
-	margin-top: 60px;
-	width: 100%;
-}
-
-.mu-testimonial-slide li{
-	list-style: none;
-	text-align: center;
-}
-
-.mu-testimonial-slide li.slick-slide {
-	padding: 0 100px;
-}
-
-.mu-testimonial-slide li .mu-quote-icon {
-	color: #fff;
-	font-size: 16px;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	margin-bottom: 20px;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-}
-
-.mu-testimonial-slide li p{
-	color: #fff;
-	font-size: 16px;
-}
-
-.mu-ct-name {
-	 margin-bottom: 5px; 
-	color: #fff;
-	line-height: 1;
-	text-transform: uppercase;
-	margin-top: 30px;
-}
-
-.mu-ct-title {
-	color: #fff;
-	font-size: 14px;
-}
-
-.mu-testimonial-slide .slick-dots {
-    bottom: -70px;
-}
-
-.mu-testimonial-slide .slick-dots li {
-	height: 12px;
-	width: 12px;
-}
-
-.mu-testimonial-slide .slick-dots li button {
-	background-color: #fff;
-	border-radius: 50%;
-	height: 10px;
-	padding: 0;
-	width: 10px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-
-}
-
-.mu-testimonial-slide .slick-dots li button:hover,
-.mu-testimonial-slide .slick-dots li button:focus,
-.mu-testimonial-slide .slick-dots li.slick-active button {
-	height: 12px;
-	width: 12px;
-}
-
-.mu-testimonial-slide .slick-dots li button::before {
-	display: none;
-}
-
-
-/*--------------------*/
 /* CONTACT US */
 /*--------------------*/
 
@@ -1191,9 +1068,7 @@ button:focus {
 		float: left;
 	}
 
-	.mu-testimonial-slide li {
-		padding: 0 15px;
-	}
+	
 
 	.mu-filter-item-content {
 		padding-top: 25%;

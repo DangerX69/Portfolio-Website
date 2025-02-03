@@ -3,13 +3,13 @@
 	Custom JS
 	
 	1. FIXED MENU
-	2. FEATURED SLIDE ( TYPED SLIDER )
+	2. FEATURED SLIDE 
 	3. SKILL PROGRESS BAR
 	4. MENU SMOOTH SCROLLING
 	5. MOBILE MENU CLOSE  
 	6. PORTFOLIO GALLERY
-	7. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )
-	9. BUTTON SMOOTH SCROLL ( VIEW MY WORK )
+	7. PORTFOLIO POPUP VIEW 
+	9. BUTTON SMOOTH SCROLL 
 	
 **/
 
@@ -19,7 +19,7 @@
 
 
 	/* ----------------------------------------------------------- */
-	/*  2. FIXED MENU
+	/*  1. FIXED MENU
 	/* ----------------------------------------------------------- */
 
 
@@ -165,7 +165,7 @@
 	    });
 
 	/* ----------------------------------------------------------- */
-	/*  7. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )
+	/*  7. PORTFOLIO POPUP VIEW 
 	/* ----------------------------------------------------------- */ 
 
 	$('.mu-filter-imglink').magnificPopup({
@@ -178,7 +178,7 @@
 
 
 	/* ----------------------------------------------------------- */
-	/*  9. BUTTON SMOOTH SCROLL 
+	/*  8. BUTTON SMOOTH SCROLL 
 	/* ----------------------------------------------------------- */
 
 		$('.view-my-work-btn').on('click',function (e) {
